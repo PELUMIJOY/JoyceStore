@@ -1,0 +1,166 @@
+.navbar{
+  //  height: 80px; 
+
+   .wrapper{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .show-on-lg-screen{
+      display: block;
+
+    }
+    .show-on-sm-screen{
+      display: none;
+      width: 100%;
+    }
+
+    
+    .item {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+   
+    .left{
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .center{
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .right{
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      #rightNav{
+       display: flex;
+       align-items: center;
+       gap: 25px
+       
+      }
+    .icons{
+      display: flex;
+      gap:15px;
+      color: #777;
+      cursor: pointer;
+    
+
+    .cartIcon{
+      position: relative;
+
+      span{
+         font-size: 12px;
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         background-color: #2879fe;
+         color: white;
+         position: absolute;
+         top:-10px;
+         right:-10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+    }
+  }
+   }
+   #mobile{
+    display: none;
+   }
+  }
+}
+  @media screen and (max-width:768px) {
+    .navbar{
+  
+      .wrapper{
+        padding-inline: 20px;
+        flex-direction: column-reverse;
+  
+              .show-on-lg-screen{
+                display: none;
+              }
+              .show-on-sm-screen{
+                display: block;
+  
+                .center_right-container {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                }
+              }
+  
+  
+                          .left {
+                            gap: 15px;
+                            font-size: 0.85rem;
+                          }
+  
+          #rightNav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: start;
+            position: fixed;
+            padding-top: 20px;
+            top: 90px;
+            right: -200px;
+            width: 200px;
+            height: 40vh;
+            background-color: white;
+            z-index: 10; /* ensures the div always displays over other element & not behind them */
+          }
+    
+          #rightNav.active {
+            right: 0px;
+    
+          }
+    
+          #mobile {
+            display: block;
+          }
+    
+          #mobile i {
+            font-size: 24px;
+          }
+     
+    }
+    }
+  }
+
+  @media screen and (max-width:600px){
+    .navbar{
+  
+      .wrapper{
+        // padding-inline: 20px;
+        // flex-direction: column-reverse;
+  
+              // .show-on-lg-screen{
+              //   display: none;
+              // }
+              // .show-on-sm-screen{
+              //   display: block;
+  
+              //   .center_right-container {
+              //     width: 100%;
+              //     display: flex;
+              //     justify-content: space-between;
+              //   }
+              // }
+  
+  
+                          .left {
+                            display: none;
+                          }
+                        }
+
+  }
+
+  }
