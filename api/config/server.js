@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  // host: env('HOST'),
+  host: env('HOST'),
   port: env.int('PORT', 1337),
 
   app: {
@@ -8,5 +8,14 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
-
+  contentSecurity: {
+    // ...
+    directives: {
+      // ...
+      connectSrc: ["'self'", "https://joycestore.onrender.com", "https:"],
+      // ...
+    },
+    // ...
+  },
+  
 });
