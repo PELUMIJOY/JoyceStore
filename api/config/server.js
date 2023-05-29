@@ -5,17 +5,19 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  webhooks: {
-    populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
-  },
-  contentSecurity: {
-    // ...
-    directives: {
-      // ...
-      connectSrc: ["'self'", "www.mystore.dev", "https:"],
-      // ...
-    },
-    // ...
-  },
+
+  
+  // webhooks: {
+  //   populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
+  // },
+  // contentSecurity: {
+  //   // ...
+  //   directives: {
+  //     // ...
+  //     connectSrc: ["'self'", "localhost:1337", "https:"],
+  //     // ...
+  //   },
+  //   // ...
+  // },
   
 });
